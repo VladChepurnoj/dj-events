@@ -7,3 +7,7 @@ export default function EventsPage() {
     </Layout>
   );
 }
+
+export async function getServerSideProps() {
+  const res = await fetch("/api/events");
+}
